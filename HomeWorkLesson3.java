@@ -22,7 +22,7 @@ public class HomeWorkLesson3 {
         int[]arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         for (int i = 0; i < arr.length; i++) {
             arr[i] = arr[i] == 0 ? (1) : (0);
-            System.out.print(arr[i] + "  ");
+            //System.out.print(arr[i] + "  ");
         }
         System.out.println();
     }
@@ -53,11 +53,13 @@ public class HomeWorkLesson3 {
             };
             for (int i = 0; i < arr.length; i++) {
                 int j = i;
+                arr[i][j]=1;
                 System.out.print(arr[i][j] + "  ");
             }
             System.out.print("\n");
             for (int i = 0 ; i < arr.length; i++) {
                 int j = arr.length-(i+1);
+                arr[i][j]=1;
                 System.out.print(arr[i][j] + "  ");
             }
     }
